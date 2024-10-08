@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>{{ site.title }}</h1>
+        <nav>
+            <a href="{{ '/' | absolute_url }}">Главная</a>
+            <a href="{{ '/about/' | absolute_url }}">О нас</a>
+            <a href="{{ '/contact/' | absolute_url }}">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>&copy; {{ site.title }}. Все права защищены.</p>
+        <p>
+            <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/{{ site.github_username }}" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

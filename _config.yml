@@ -1,0 +1,14 @@
+title: My Awesome Blog
+description: A blog about my experiences and thoughts.
+url: "https://username.github.io/my-blog"
+twitter_username: your_twitter_username
+github_username: your_github_username
+disqus_shortname: your_disqus_shortname
+markdown: kramdown
+theme: minimal-mistakes-jekyll
+
+# SEO settings
+seo:
+  title: My Awesome Blog
+  description: A blog about my experiences and thoughts.
+  keywords: [блог, темы, теги]
